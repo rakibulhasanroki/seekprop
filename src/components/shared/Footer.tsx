@@ -10,7 +10,7 @@ export default function Footer() {
             <h2 className="text-xl font-bold text-secondary">SeekProp</h2>
             <p className="text-sm text-primary-foreground/50 leading-relaxed">
               Defining the standard for high-end property discovery and
-              management since 2024.
+              management since 2026.
             </p>
             <div className="flex items-center gap-3 mt-2">
               <div className="w-8 h-8 rounded-full border border-primary-foreground/20 flex items-center justify-center hover:border-secondary transition-colors cursor-pointer">

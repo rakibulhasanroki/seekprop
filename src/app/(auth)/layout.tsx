@@ -1,19 +1,16 @@
-import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
 
-function PublicLayout({
+function AuthLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <div>
-      <Navbar />
-      <div className="h-16" />
+      <Navbar isAuth={true} />
       {children}
-      <Footer />
     </div>
   );
 }
 
-export default PublicLayout;
+export default AuthLayout;

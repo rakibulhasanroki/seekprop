@@ -1,0 +1,48 @@
+export const properties = [
+  {
+    id: "ABP-8427",
+    badge: "Featured",
+    title: "Azure Horizon Estate",
+    location: "Malibu, CA 90265",
+    price: "$12,450,000",
+    estimate: "$54,900/mo",
+    beds: 6,
+    baths: 8,
+    sqft: "8,400",
+    type: "Single Family",
+    listingId: "ABP-8427",
+    image: "/property1.png",
+    description:
+      "A masterwork of modern design, Azure Horizon Estate offers an unparalleled living experience. This architectural marvel features sweeping canyon views and a level of finish rarely seen. Built with a focus on seamless indoor-outdoor living, the residence boasts glass walls that disappear into the structure at the touch of a button.",
+  },
+  {
+    id: "ABP-9163",
+    title: "The Obsidian Penthouse",
+    location: "San Francisco, CA 94105",
+    price: "$8,900,000",
+    estimate: "$38,200/mo",
+    beds: 3,
+    baths: 4,
+    sqft: "4,200",
+    type: "Penthouse",
+    listingId: "ABP-9163",
+    image: "/property2.png",
+    description:
+      "The Obsidian Penthouse redefines urban luxury living in the heart of San Francisco. Floor to ceiling windows frame breathtaking city views while the interior showcases bespoke finishes and curated art installations throughout.",
+  },
+  {
+    id: "ABP-7291",
+    title: "Oceanview Retreat",
+    location: "Santa Monica, CA 90401",
+    price: "$5,200,000",
+    estimate: "$22,400/mo",
+    beds: 4,
+    baths: 3,
+    sqft: "3,800",
+    type: "Single Family",
+    listingId: "ABP-7291",
+    image: "/property1.png",
+    description:
+      "Oceanview Retreat is a serene coastal sanctuary steps from the Pacific. Designed for effortless California living, this home blends warm natural materials with open-plan spaces that flow seamlessly to outdoor entertaining areas.",
+  },
+];

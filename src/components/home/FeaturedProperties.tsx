@@ -78,6 +78,7 @@ export default function FeaturedProperties() {
                   src={p.image}
                   alt={p.location}
                   fill
+                  priority
                   className="object-cover"
                 />
                 {p.badge && (
