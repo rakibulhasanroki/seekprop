@@ -1,6 +1,13 @@
 import { Pencil, Trash2 } from "lucide-react";
+import Link from "next/link";
 
-export default function ListingManagement() {
+const isAdmin = true;
+
+export default function ListingManagement({
+  listingId,
+}: {
+  listingId: string;
+}) {
   return (
     <div className="sticky top-24 flex flex-col gap-4">
       <div className="bg-card border border-border rounded-2xl p-5 flex flex-col gap-4">
@@ -26,15 +33,22 @@ export default function ListingManagement() {
           </div>
         </div>
 
-        <button className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-secondary text-secondary-foreground text-sm font-medium hover:opacity-90 transition-opacity">
-          <Pencil size={14} />
-          Edit Listing Details
-        </button>
+        {isAdmin && (
+          <>
+            <Link
+              href={`/property/${listingId}?edit=true`}
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-secondary text-secondary-foreground text-sm font-medium hover:opacity-90 transition-opacity"
+            >
+              <Pencil size={14} />
+              Edit Listing Details
+            </Link>
 
-        <button className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl border border-destructive text-destructive text-sm font-medium hover:bg-destructive/5 transition-colors">
-          <Trash2 size={14} />
-          Remove Property
-        </button>
+            <button className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl border border-destructive text-destructive text-sm font-medium hover:bg-destructive/5 transition-colors">
+              <Trash2 size={14} />
+              Remove Property
+            </button>
+          </>
+        )}
 
         <div className="flex items-center gap-3 border-t border-border pt-4">
           <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-secondary-foreground font-bold text-xs shrink-0">
