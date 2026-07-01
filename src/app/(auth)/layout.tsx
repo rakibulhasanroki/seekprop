@@ -5,12 +5,7 @@ function AuthLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <div>
-      <Navbar isAuth={true} />
-      {children}
-    </div>
-  );
+  return <div>{children}</div>;
 }
 
 export default AuthLayout;
